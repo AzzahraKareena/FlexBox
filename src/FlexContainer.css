@@ -1,0 +1,29 @@
+/* elemen induk */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Ini memungkinkan item untuk membungkus ke baris baru */
+    justify-content: space-between; /* Membuat ruang antara item */
+    align-items: center;
+    height: auto; /* Biarkan tinggi container menyesuaikan konten */
+}
+
+/* elemen anak */
+.flex-item {
+    width: calc(20% - 20px); /* Mengurangkan margin dari lebar item */
+    height: auto;
+    background-color: #f0805b;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Selektor CSS khusus untuk elemen img di dalam .flex-item */
+.flex-item img {
+    max-width: 100%; /* Maksimalkan lebar gambar */
+    height: auto;
+}
